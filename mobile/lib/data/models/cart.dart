@@ -37,7 +37,7 @@ class Cart extends Equatable {
   final List<CartItem> items;
   final double total;
 
-  /// Общее количество штук в корзине (для счётчика в AppBar).
+  /// Общее количество штук в корзине
   int get count => items.fold(0, (sum, item) => sum + item.quantity);
 
   bool contains(int productId) => items.any((i) => i.productId == productId);

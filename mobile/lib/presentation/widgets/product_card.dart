@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../data/models/product.dart';
 
-/// Карточка товара в списке: картинка, название, рейтинг, цена.
+/// Карточка товара в списке- картинка, название, рейтинг, цена.
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key, required this.product, required this.onTap});
 

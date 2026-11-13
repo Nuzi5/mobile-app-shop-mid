@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 
-/// Ошибка при обращении к серверу, с понятным текстом для пользователя.
 class ApiException implements Exception {
   const ApiException(this.message);
 
@@ -10,7 +9,6 @@ class ApiException implements Exception {
   String toString() => message;
 }
 
-/// Тонкая обёртка над Dio: один базовый адрес и единая обработка ошибок.
 class ApiClient {
   ApiClient({required String baseUrl, Dio? dio})
       : _dio = dio ??

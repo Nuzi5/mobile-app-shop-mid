@@ -25,7 +25,7 @@ class Product extends Equatable {
   final int stock;
   final String thumbnail;
 
-  /// Цена с учётом скидки.
+
   double get discountedPrice => price * (1 - discountPercentage / 100);
 
   factory Product.fromJson(Map<String, dynamic> json) {

@@ -4,8 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/models/cart.dart';
 import '../../data/repositories/shop_repository.dart';
 
-// ---------- Events ----------
-
 sealed class CartEvent extends Equatable {
   const CartEvent();
 
@@ -34,8 +32,6 @@ class CartItemRemoved extends CartEvent {
   @override
   List<Object?> get props => [productId];
 }
-
-// ---------- States ----------
 
 enum CartStatus { initial, loading, ready, failure }
 

@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/cart/cart_bloc.dart';
 import '../pages/cart_page.dart';
 
-/// Иконка корзины в шапке с количеством товаров. Открывает экран корзины.
+/// Иконка корзины в шапке с количеством товаров, Открывает экран корзины
 class CartButton extends StatelessWidget {
   const CartButton({super.key});
 

@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../bloc/cart/cart_bloc.dart';
 
-/// Экран корзины: список позиций, удаление и итог.
+/// Экран корзины- список позиций, удаление и итог
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 

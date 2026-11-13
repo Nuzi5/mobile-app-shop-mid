@@ -5,7 +5,7 @@ import '../../bloc/cart/cart_bloc.dart';
 import '../../data/models/cart.dart';
 import '../../data/models/product.dart';
 
-/// Экран одного товара: описание и кнопки корзины.
+/// Экран одного товара- описание и кнопки корзины.
 class ProductDetailPage extends StatelessWidget {
   const ProductDetailPage({super.key, required this.product});
 

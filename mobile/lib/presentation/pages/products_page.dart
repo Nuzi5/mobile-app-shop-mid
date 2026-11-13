@@ -7,7 +7,7 @@ import '../widgets/cart_button.dart';
 import '../widgets/product_card.dart';
 import 'product_detail_page.dart';
 
-/// Главный экран: список товаров (4 карточки) с сервера.
+/// Главный экран- список товаров (4 карточки) с сервера
 class ProductsPage extends StatelessWidget {
   const ProductsPage({super.key});
 

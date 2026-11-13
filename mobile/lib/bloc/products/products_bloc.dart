@@ -4,8 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/models/product.dart';
 import '../../data/repositories/shop_repository.dart';
 
-// ---------- Events ----------
-
 sealed class ProductsEvent extends Equatable {
   const ProductsEvent();
 
@@ -17,7 +15,6 @@ class ProductsRequested extends ProductsEvent {
   const ProductsRequested();
 }
 
-// ---------- States ----------
 
 enum ProductsStatus { initial, loading, success, failure }
 
@@ -47,8 +44,6 @@ class ProductsState extends Equatable {
   @override
   List<Object?> get props => [status, products, error];
 }
-
-// ---------- Bloc ----------
 
 class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
   ProductsBloc({required ShopRepository repository})
