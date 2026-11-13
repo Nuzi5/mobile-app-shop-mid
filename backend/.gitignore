@@ -1,0 +1,13 @@
+out/
+backend/data/
+backend/__pycache__/
+__pycache__/
+*.pyc
+.venv/
+backend/.venv/
+.idea/
+*.iml
+mobile/.dart_tool/
+mobile/build/
+mobile/android/.gradle/
+mobile/android/local.properties

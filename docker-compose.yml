@@ -1,0 +1,11 @@
+# Запуск бэкенда:  docker compose up --build
+# Проверка:        curl http://localhost:8000/products
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # База корзины сохраняется на компьютере между перезапусками
+      - ./backend/data:/app/data
+    restart: unless-stopped
